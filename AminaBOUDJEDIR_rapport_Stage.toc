@@ -1,0 +1,22 @@
+\babel@toc {french}{}\relax 
+\contentsline {chapter}{Introduction}{3}{chapter*.2}%
+\contentsline {section}{\numberline {1}CNIEG}{3}{section.0.1}%
+\contentsline {section}{\numberline {2}Équipes de travail}{4}{section.0.2}%
+\contentsline {section}{\numberline {3}Méthodologie de travail}{4}{section.0.3}%
+\contentsline {subsection}{\numberline {3.1}Processus de développement}{5}{subsection.0.3.1}%
+\contentsline {chapter}{Contexte du projet}{6}{chapter*.3}%
+\contentsline {chapter}{Travail réalisé}{7}{chapter*.4}%
+\contentsline {section}{\numberline {1}Technologies utilisées}{7}{section.0.1}%
+\contentsline {section}{\numberline {2}Architecture}{8}{section.0.2}%
+\contentsline {subsection}{\numberline {2.1}Mise en place}{8}{subsection.0.2.1}%
+\contentsline {subsection}{\numberline {2.2}Partie frontend}{9}{subsection.0.2.2}%
+\contentsline {subsection}{\numberline {2.3}Partie backend}{10}{subsection.0.2.3}%
+\contentsline {subsubsection}{2.2.1\hspace {2em}Diagramme des cas d'utilisation}{10}{section*.7}%
+\contentsline {subsubsection}{2.2.2\hspace {2em}Diagramme d'activité}{11}{section*.9}%
+\contentsline {subsubsection}{2.2.3\hspace {2em}Diagramme de classe}{11}{section*.11}%
+\contentsline {subsubsection}{2.2.4\hspace {2em}Choix techniques et implémentation}{12}{section*.13}%
+\contentsline {chapter}{Bilan, conclusion et perspective}{16}{chapter*.19}%
+\contentsline {chapter}{Glossaire}{17}{chapter*.20}%
+\contentsline {chapter}{Table des figures}{19}{chapter*.20}%
+\contentsline {chapter}{Bibliographie}{20}{chapter*.20}%
+\contentsline {chapter}{Annexes}{21}{chapter*.22}%

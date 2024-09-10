@@ -1,0 +1,110 @@
+\documentclass[a4paper,12pt]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\usepackage{microtype}  % pour éviter le coupage des mots
+\usepackage{geometry}
+\usepackage{caption}
+\geometry{top=2cm, bottom=2cm, left=2cm, right=2cm}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage[hidelinks]{hyperref}
+\usepackage{url}
+\usepackage{lipsum}
+\usepackage{tocloft}
+\renewcommand{\figurename}{Figure}
+\renewcommand{\cftfigpresnum}{Figure\ } % Texte à afficher avant le numéro de la figure
+\setlength{\cftfignumwidth}{3cm}       % Largeur de la boîte pour les numéros de figures
+
+\renewcommand{\thesection}{\arabic{section}}
+\usepackage{chngcntr} % Package pour la gestion des compteurs
+\setcounter{tocdepth}{3} %inclure subsubsection dans la table des matieres
+\renewcommand\thesubsubsection{\thesubsection.\arabic{subsubsection}}
+\usepackage{enumitem} % Pour ajuster les marges
+
+
+\usepackage{csquotes}
+\usepackage[backend=biber,style=numeric,url=false]{biblatex}
+\addbibresource{references.bib}
+
+\begin{document}
+
+% Page de garde
+\begin{titlepage}
+  \begin{center}
+  \centering
+  
+  \begin{minipage}{0.45\textwidth}
+    \raggedright
+    \includegraphics[width=\textwidth]{images/logo/logo_univ.png}
+  \end{minipage}
+  \hfill
+  \begin{minipage}{0.25\textwidth}
+      \raggedleft
+      \includegraphics[width=\textwidth]{images/logo/logo_cnieg.png}
+  \end{minipage}
+
+  \vspace{3cm}
+
+  {\scshape\LARGE Rapport de stage \par}
+  \vspace{1cm}
+  \rule{\textwidth}{0.8pt} \\ 
+  \vspace{0,2cm}
+
+  \textbf {Réalisation d’une application web de notation de formation pour les agents de la CNIEG avec Angular / Spring Boot }
+
+  \vspace{0,1cm}
+  \rule{\textwidth}{0.8pt} \\ %line Horizontale
+  
+  \vspace{1cm}
+  
+  {\Large 15 mars 2024 - 7 juin 2024 \par}
+  \vfill
+\end{center}
+
+\noindent
+\hspace{2cm}\textbf{Réaliser par } \hspace{1cm} Amina BOUDJEDIR
+
+\vspace{1.5cm}
+
+\noindent
+\hspace{2cm}\textbf{Encadrants} \\
+\begin{tabbing}
+  \hspace{4cm} Entreprise \hspace{2,9cm} Clément SIROU \\
+  \hspace{4cm} Université de Nantes \hspace{1cm} Amal TIAB
+\end{tabbing}
+\vfill
+
+\begin{center}
+    Année universitaire 2023 - 2024
+\end{center}
+
+  
+\end{titlepage}
+
+% Remerciment
+\include{remerciement}
+
+
+% Sommaire
+\tableofcontents
+\newpage
+
+\include{introduction}
+\include{Contexte_travail}
+\include{travail_realise}
+\include{bilan_conclusion_perspective}
+\include{glossaire}
+
+\addcontentsline{toc}{chapter}{Table des figures}
+\listoffigures
+
+\nocite{*}
+\include{bibliographie}
+
+\include{annexe}
+
+
+% ...
+
+\end{document}

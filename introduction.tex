@@ -1,0 +1,119 @@
+\chapter*{Introduction}
+\addcontentsline{toc}{chapter}{Introduction}
+Du 15 mars au 7 juin j’ai eu l'opportunité de rejoindre la CNIEG en tant que développeuse full stack sous 
+la gouvernance de M Clément SIROU, un développeur au sein de cette entreprise. 
+Naturellemnt, attiré par le milieu de  la programmation j'ai rappidement décidé d'orienté mes recherches 
+de stage vers ce domaine.\medskip
+
+Le but de ce stage est de parvenir à réaliser et à développer un produit minimun viable en utilisant 
+des technologies modernes.\medskip
+
+Ce rapport présente les différentes tâches et missions que mon tuteur m'a confié, elles se dévisent en 3 parties : 
+\medskip
+
+Avant tout une présentation de l'entreprise, de l'équipe de travail, leurs méthologie de travail et du cadre général de ce projet.\medskip
+
+Ensuite je me focalise sur le cahier des charges et les demandes du client.\medskip
+
+Et enfin la troisième partie présente tout d'abord les technologies utilisées et l'architechture du 
+logiciel avec ses deux aspect front et back. Elle détaille également les besoins fonctionnels et non fonctionnels 
+et aborde l'analyse de ces besoins en se basant sur le langage de modélisation UML. 
+
+\medskip
+   
+    \section{CNIEG}
+    La Caisse Nationale des Industries Electriques et Gazières (CNIEG) a été créée le 1er janvier 2005 par la loi du 9 août 2004 en tant qu’organisme de sécurité sociale de droit privée, doté d’une personnalité morale. Il existe un seul site qui se trouve à Nantes, 20 rue des Français libres.
+	\medskip
+
+    La CNIEG est une caisse de retraite chargée de la gestion du régime spécial d’assurance vieillesse, invalidité, décès, accidents du travail et maladies professionnelles des industries électriques et gazières (IEG).
+	L’entreprise ne fonctionne pas avec une structure hiérarchique classique. En effet la CNIEG a pour but d’être une entreprise « responsabilisante ».
+    \medskip
+
+	L’entreprise est divisée en départements :
+    \medskip
+    \begin{itemize}[leftmargin=2cm]
+        \item Direction
+        \item Département audit comptable finance (DACF).
+        \item Département secrétariat général.
+        \item Département gestion et relation clientèle (DGRC).
+        \item Département système d’information (DSI).
+    \end{itemize}
+	\medskip
+
+	Chaque département est composé de plusieurs pôles.
+
+    
+  % ...
+
+    \section{Équipes de travail}
+    Mon stage se déroule au sein du département système d’information dans l’équipe Pégase. Ce département est constitué de plusieurs pôles :
+    \medskip
+
+	Pôle pilotage SI : expérimentées, pragmatique et pédagogiques pour réussir les projets management de projet.
+	\medskip
+
+    Pôle GPSI
+	\medskip
+
+    Pôle conduite : contrôle et analyse, planifications, suivi d’évolution, Bilan compte rendu remonté d’incident.
+	\medskip
+
+    Pôle exploitation : Gestion des demandes et incidents, Mise en production, Réseau Téléphonie Infrastructure, gestion des contrats d’infogérance, gestion du parc informatique, traitement et flux.
+	\medskip
+
+    Pôle A2iD : Architecture Infrastructure Intégration Déploiement.
+	\medskip
+
+    Pôle IED : Ingénieur études et Développement.
+	\medskip
+
+    Pôle ISI : Ingénieur Système d’Information.
+	\medskip
+
+    Co-DSI : gestion des richesses humaines de DSI.
+    \medskip
+
+    Domaine de travail :  gestion et paiement, carrière et financement, interactions clients.
+    \medskip
+
+    Equipes de réalisations : Belem, Albatros, Glenan, Capri, Phoenix, Pégase.
+    \medskip
+
+	Dans ce département il y a plusieurs équipes chacune composée de Business analyst (BA), de développeur (DEV), dun product owner (PO) et d'un scrum master (SM) qui travaillent en collaboration.
+
+
+
+
+    \section{Méthodologie de travail} 
+    La CNIEG adopte une approche agile dans la gestion de ses projets de développement logiciels. Cette approche vise à favoriser la flexibilité, la réactivité et la livraison continue de valeur ajoutée, dans ce qui suis une description de cette approche au sein de l'entreprise :  
+    \medskip
+    \begin{enumerate}
+        \item Planifiaction\\Sélection des fonctionnalités : L’équipe de développement avec les parties prenantes, identifie les fonctionnalités à développer pour répondre aux besoins de l'entreprise et des utilisateurs.\\Élaboration du backlog : liste prioritaire de fonctionnalités qu’un produit doit contenir, sous forme de 'user story' ou de tâches.
+        \medskip
+        \item Itérations\\Les développements sont organisés en sprints d'une durée de 3 semaines dans laquelle l’équipe s’engage à livrer un ensemble défini de fonctionnalités.\\
+        Au début de chaque sprint, l’équipe sélectionne un ensemble de user story à réaliser, en fonction de leur priorité et de la capacité de l’équipe.\\
+        Chaque jour l’équipe se rassemble pour une réunion quotidienne(mêlée) afin de partager l’avancement, les obstacles éventuels et les plans de la journée.
+        \medskip
+
+        \item Développement\\Les membres de l'équipe collaborent étroitement tout au long du processus de développement, en partageant leurs connaissances et en résolvant les problèmes ensemble.
+        \medskip
+
+        \item Revue et rétrospective\\Une fois le sprint terminé, l’équipe présente les fonctionnalités développées aux parties prenantes pour obtenir leur feedback et valider les livrables.\\L’équipe se réunit pour réfléchir sur le sprint écoulé, identifier ce qui a bien fonctionné et ce qui peut être amélioré, afin d’ajuster et d’optimiser le processus pour les sprints suivants.
+        \medskip   
+    \end{enumerate}
+        \subsection{Processus de développement} 
+        Dans leurs processus de développement logiciel, Git est utilisé comme plateforme de gestion de code source. Les développeurs travaillent sur leurs branches, et lorsqu’ils finalisent leur code, ils le poussent vers Gitlab.
+        \medskip
+
+	    Ensuite, Jenkins entre en jeu. Il surveille en permanence les modifications sur Gitlab. Dès qu’un développeur pousse du code sur une branche, Jenkins lance un build (compilation du code, tests automatisés) de cette branche. Si le build est KO il envoie un message à l’auteur du commit, sinon si le build est OK alors les fichiers 'pom' sont exécutés et des packages 'jar' ou 'war' seront générés. Une fois l’image construite générée, elle sera stockée dans Nexus qui est un gestionnaire de paquet.
+        \medskip
+
+	    Enfin, Kubernetes orchestre le déploiement des applications. Un exemple de son utilisation au sein de l’entreprise : En fin de mois le back paie qui est très sollicité va faire appel à beaucoup de service pour récupérer les informations. L’application a une instance (Pod) qui tourne et qui se fait 'bombarder' alors Kubernetes lance une autre instance pour répondre à la forte demande qui est automatique. Un des avantages de son utilisation : pas d’impact sur le SI, stable. 
+        \medskip
+
+        En revanche, les équipes envisagent une transition vers Gitlab CI pour améliorer leurs processus d'intégration et de déploiement continu.
+        Gitlab CI simplifie et permet d'optimiser le processus de développement en intégrant de manière plus fluide l'intégration et le déploiement continu.\medskip
+
+        Nous allons adopter cette approche dans notre projet, ce qui nous permettra de bénificier d'une configuration et intégration plus simple.
+        
+  % ...
